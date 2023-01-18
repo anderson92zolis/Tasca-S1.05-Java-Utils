@@ -1,31 +1,27 @@
-package n1exercici2;
+package n1exercici3;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.sql.Date;
 
 
-public class contengutDirALNiveles {
+public class ContengutDirALNivelesGuardaEnTxt {
    /*
-   	* Afegeix a la classe de l’exercici anterior, la funcionalitat de llistar un arbre de 
-   	* directoris amb el contingut de tots els seus nivells (recursivament) de manera que 
-   	* s'imprimeixin en pantalla en ordre alfabètic dins de cada nivell, indicant a més si és un
-   	*  directori (D) o un fitxer (F), i la seva última data de modificació.
-    */
+    * Modifica l’exercici anterior. Ara, en lloc de mostrar el resultat per la pantalla, 
+    * guarda el resultat en un fitxer TXT. 
+    * Hecho desde el main
+   */
 	
 	private String directori;
 	
 	// "C:\\Users\\azoli\\eclipse-workspace\\Tasca S1.05- Java Utils\\src\\n1exercici1\\filename.txt"
 	
-	public   contengutDirALNiveles(String directori) {
+	public   ContengutDirALNivelesGuardaEnTxt(String directori) {
 		this.directori=directori;
 	}	
 	
 	public void importOrdenaArrayList() {
 		
-	ArrayList<String> sortArrayList = new ArrayList<String>();
-	
 	     try {
 	      File ruta = new File(directori);
 	      String[] nombresArchivos = ruta.list(); // transformamos a Array de tipo String
@@ -45,7 +41,9 @@ public class contengutDirALNiveles {
 	    		  
 	    		  System.out.println("Es un directorio (D):  " + fileODirectori.getCanonicalPath() +" Última modificación "+lastModificacion);
 	    		  Arrays.sort(subCarpetas);
+	    		  
 	    		  for (String archivosSubCarpetas:subCarpetas) {
+	    			  
 	    			  System.out.println("\t"+"subcarpetas del directorio  "+" "+ archivosSubCarpetas);;;
 	    			  }}
 	    	 
@@ -55,6 +53,7 @@ public class contengutDirALNiveles {
 	    	  }
 	      } catch (IOException e) {
 	            e.printStackTrace();
-	      }
-	} 
+	      }  
+	}	  
+		
 }	
