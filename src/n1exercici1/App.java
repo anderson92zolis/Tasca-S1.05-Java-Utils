@@ -8,6 +8,7 @@ public class App {
 		
 		contengutDirAL pruebaOrdena= new contengutDirAL("C:\\Users\\azoli\\eclipse-workspace\\Tasca S1.05- Java Utils\\src\\n1exercici1\\filename.txt");
 		pruebaOrdena.importOrdenaArrayList();
+		
 	}
 
 }
