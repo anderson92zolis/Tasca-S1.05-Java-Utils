@@ -1,44 +1,39 @@
 package n1exercici1;
 import java.io.File;
-import java.util.Scanner; // Import the Scanner class to read text files
+import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.io.FileNotFoundException;  // Import this class to handle errors
+import java.util.Arrays;
+import java.sql.Date;
+
 
 public class contengutDirAL {
    /*
-    * - Exercici 1
-	* Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.	
-    * retorn un AL con las palabras del fichero ordenada[Anderson,Bea] 
+   	* Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.
     */
 	
 	private String directori;
 	
-	// "C:\\Users\\azoli\\eclipse-workspace\\Tasca S1.05- Java Utils\\src\\n1exercici1\\filename.txt"
+	// "C:\\Users\\azoli\\eclipse-workspace\\Tasca S1.05- Java Utils\\
 	
 	public   contengutDirAL(String directori) {
 		this.directori=directori;
 	}	
 	
-	public ArrayList<String> importOrdenaArrayList(){
-	ArrayList<String> sortArrayList = new ArrayList<String>();
-		try {
-	      File myObj = new File(directori);
-	      Scanner myReader = new Scanner(myObj);
-	      while (myReader.hasNextLine()) {
-	        String data = myReader.nextLine();
-	        String[] nombre_archivos = data.split(" ");
-	        for (String word:nombre_archivos) {
-	        	sortArrayList.add(word); 
-	        	}
-	      }		      
-	      myReader.close();
-	    } catch (FileNotFoundException e) {
-	      System.out.println("An error occurred.");
-	      e.printStackTrace();
-	    }
-		Collections.sort(sortArrayList);
-		System.out.println("mi ArrayList: "+sortArrayList);
-	return sortArrayList;
-	}
+	public void importOrdenaArrayList() {
+	
+	     try {
+	      File ruta = new File(directori);
+	      String[] nombresArchivos = ruta.list(); // transformamos toda la Array a tipo String
+	      Arrays.sort(nombresArchivos);
+	      
+	      for(String ordenAlfa:nombresArchivos) {
+	    	  System.out.println(" nombres de archivos : " + ordenAlfa+"\n");;
+	    	  }
+	      
+	      //System.out.println(" nombres de archivos : " + Arrays.toString(nombresArchivos)+"\n"); //transforma toda la array list a un String
+	      
+	      } catch (Exception e) {
+	            e.printStackTrace();
+	      }
+	} 
 }	
