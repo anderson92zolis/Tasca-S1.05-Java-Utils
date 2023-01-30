@@ -11,11 +11,16 @@ public class  llistiAlfabeticamentContingut {
 	   	* Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.
 	    */
 		
-		String fileLocation= "C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\";
-		ordenaDirectorio(fileLocation);
+		//String fileLocation= "C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\";
+		
+		if (args.length==1) {
+			ordenaDirectorio(args[0]);
+		}else {
+			System.out.println("Check if the specified path is correct, spaces aren't allow! ");
+			}
 	}
 	
-	public static void ordenaDirectorio(String fileLocation ) {
+	public static void ordenaDirectorio(String fileLocation) {
 		  
 	     try {
 	      File creationFile = new File(fileLocation);
