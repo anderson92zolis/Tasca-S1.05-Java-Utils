@@ -1,0 +1,3 @@
+Directori=1.0
+NomFicher=TestApp
+DirectoriFicher=2016-11-12
