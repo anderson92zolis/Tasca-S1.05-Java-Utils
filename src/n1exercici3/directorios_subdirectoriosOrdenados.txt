@@ -1,14 +1,16 @@
- nombres de archivos : [n1exercici1, n1exercici2, n1exercici3, prueba.txt]
-
-Es un directorio (D):  C:\Users\azoli\eclipse-workspace\Tasca S1.05- Java Utils\src\n1exercici1 Última modificación 2023-01-17
-	subcarpetas del directorio   App.java
-	subcarpetas del directorio   contengutDirAL.java
-	subcarpetas del directorio   filename.txt
-Es un directorio (D):  C:\Users\azoli\eclipse-workspace\Tasca S1.05- Java Utils\src\n1exercici2 Última modificación 2023-01-18
-	subcarpetas del directorio   App.java
-	subcarpetas del directorio   contengutDirALNiveles.java
-Es un directorio (D):  C:\Users\azoli\eclipse-workspace\Tasca S1.05- Java Utils\src\n1exercici3 Última modificación 2023-01-18
-	subcarpetas del directorio   App.java
-	subcarpetas del directorio   ContengutDirALNivelesGuardaEnTxt.java
-	subcarpetas del directorio   directorios_subdirectoriosOrdenados.txt
-Es un fichero (F):  C:\Users\azoli\eclipse-workspace\Tasca S1.05- Java Utils\src\prueba.txt Última modificación 2023-01-18
+Es un directorio (D):  n1exercici1 Ultima modificacion: 30/01/2023 - 01:39:20
+	Es un fichero (F):  llistiAlfabeticamentContingut.java Ultima modificacion: 30/01/2023 - 05:22:11
+Es un directorio (D):  n1exercici2 Ultima modificacion: 30/01/2023 - 06:32:37
+	Es un fichero (F):  App.class Ultima modificacion: 30/01/2023 - 06:32:37
+	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 07:07:16
+Es un directorio (D):  n1exercici3 Ultima modificacion: 30/01/2023 - 07:52:46
+	Es un fichero (F):  App.class Ultima modificacion: 30/01/2023 - 07:52:46
+	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 07:51:33
+	Es un fichero (F):  directorios_subdirectoriosOrdenados.txt Ultima modificacion: 30/01/2023 - 07:53:19
+Es un directorio (D):  n1exercici4 Ultima modificacion: 30/01/2023 - 01:32:06
+	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 01:32:06
+	Es un fichero (F):  contengutDirAL.java Ultima modificacion: 30/01/2023 - 01:32:06
+Es un directorio (D):  n1exercici5 Ultima modificacion: 30/01/2023 - 01:46:25
+	Es un fichero (F):  Main.java Ultima modificacion: 30/01/2023 - 01:46:43
+	Es un fichero (F):  Ordinador.java Ultima modificacion: 30/01/2023 - 01:46:40
+	Es un fichero (F):  prueba.txt Ultima modificacion: 30/01/2023 - 01:32:06

@@ -52,7 +52,7 @@ public class App {
 	    		  
 	    		  System.out.println("\t"+"Es un fichero (F):  "+ fileODirectori.getName()+ " Ultima modificacion: "+ dateFormat.format(fileODirectori.lastModified()));;
 	    		  }
-    		  //System.out.println("\n");
+    		  
 	    	  }
 	} 
 
