@@ -9,8 +9,12 @@ import java.io.ObjectOutputStream;
 
 public class Main {
 
-	public static void main(String[] args) throws ClassNotFoundException { // lanzar throws ClassNotFoundException cuando se trabaje con try/catch
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws ClassNotFoundException { // lanzar throws ClassNotFoundException para la lectura del ficheros
+	 
+	/* - Exercici 5
+	 * Ara el programa ha de serialitzar un Objecte Java a un fitxer .ser i després l’ha de desserialitzar.
+	 */
+	
 	Ordinador[] listaOrdenadores = new Ordinador[2];
 	
 	Ordinador ordenador1= new Ordinador();
@@ -31,7 +35,7 @@ public class Main {
 		recuperando_Fichero.close();
 		
 		for (Ordinador ordenadores:ordenadoresRecuperadosEnArray) {
-			System.out.println("estos son los ordenadores de guardados en .ser: " + ordenadores);
+			System.out.println("estos son los ordenadores guardados en .ser: " + ordenadores);
 			}
 		}
 	
