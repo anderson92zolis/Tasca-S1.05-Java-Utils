@@ -3,22 +3,8 @@ package n1exercici1;
 import java.io.File;
 import java.util.Arrays;
 
-public class  llistiAlfabeticamentContingut {
-
-	public static void main(String[] args) {
-
-		/* Exercici1
-	   	* Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.
-	    */
-		
-		//String fileLocation= "C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\";
-		
-		if (args.length==1) {
-			ordenaDirectorio(args[0]);
-		}else {
-			System.out.println("Check if the specified path is correct, spaces aren't allow! ");
-			}
-	}
+public class LListeAlfDirectory {
+	
 	
 	public static void ordenaDirectorio(String fileLocation) {
 		  
@@ -34,6 +20,6 @@ public class  llistiAlfabeticamentContingut {
 	      } catch (Exception e) {
 	            e.printStackTrace();
 	      }
-	} 	
+	} 
 
 }
