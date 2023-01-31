@@ -46,7 +46,7 @@ public class App {
 	
 	    	 File fileODirectori= nombresArchivos[i].getAbsoluteFile(); 
 	    	  
-	    	 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss"); 				// https://stackoverflow.com/questions/4363197/getting-the-last-modified-date-of-a-file-in-java
+	    	 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss"); 				// https://stackoverflow.com/questions/4363197/getting-the-last-modified-date-of-a-file-in-java
 	    	   
 	    	 if (fileODirectori.isDirectory()) {
 	    		  

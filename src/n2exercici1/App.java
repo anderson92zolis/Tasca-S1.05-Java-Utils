@@ -24,47 +24,43 @@ public class App {
 		 *      Nom i directori del fitxer TXT resultant.
 	    */
 		
-					// Path where is the txt
-		
-		
-		
 		System.out.println(" 'Loading Properties Files' ");
 				
 		try { 
-			String pathConfPro = "C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\src\\n2exercici1\\configuracion.properties.txt";
+			String pathConfigPropertxt = "C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\src\\n2exercici1\\configuracion.properties.txt";
 			
 			Properties propiedades= new Properties();
-			propiedades.load(new FileInputStream(new File(pathConfPro)));
+			propiedades.load(new FileInputStream(new File(pathConfigPropertxt)));
 		
-			System.out.println("Directori a llegir: "+ propiedades.getProperty("Directori"));
+			/*System.out.println("Directori a llegir: "+ propiedades.getProperty("Directori"));
 		    System.out.println("Directori del fichet txt: " +propiedades.getProperty("DirectoriFicher"));
-		    System.out.println("Nom del ficher txt: "+propiedades.getProperty("NomFicher"));
+		    System.out.println("Nom del ficher txt: "+propiedades.getProperty("NomFicher"));*/
 		    
 			String directori= propiedades.getProperty("Directori");
 			String directoriFicher= propiedades.getProperty("DirectoriFicher");
 			String nomFicher= propiedades.getProperty("NomFicher");
 			
-			guardaEnFicheTxt(directori,directoriFicher,//nomFicher);
+			guardaEnFicheTxt(directori,directoriFicher,nomFicher);
 		
 			}catch (FileNotFoundException e) {
 			      // TODO Auto-generated catch block
 			      e.printStackTrace();
 			}catch (IOException e) {
 				System.out.println("VA PASSAR UN ERROR ->"+e.getMessage());
-				}
-		
+			}
 	}
 	
-	public static void guardaEnFicheTxt(String fileLocation, String directoriFicher, // String nomFicher) {
+	public static void guardaEnFicheTxt(String fileLocation, String directoriFicher, String nomFicher) {
 		
 		try {
+			File fileODirectori= new File(new File(directoriFicher),nomFicher); //create the File object with the directory and name of ficher 
 			PrintStream myConsole = System.out;
-            PrintStream fileOut = new PrintStream (//directoriFicher, ); // name of a file where we are going to write
+            PrintStream fileOut = new PrintStream (fileODirectori); // name of a file where we are going to write
             System.setOut(fileOut);
-            importOrdenaArrayList(fileLocation);
+            importOrdenaArrayList(fileLocation); // directory  of labels (D) & (F)
 		} catch(FileNotFoundException fx) {
 			System.out.println(fx);
-			};
+			}
 		}
 	
 	public static void importOrdenaArrayList(String fileLocation) {
@@ -77,7 +73,7 @@ public class App {
 	
 	    	 File fileODirectori= nombresArchivos[i].getAbsoluteFile(); 
 	    	  
-	    	 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - hh:mm:ss"); 				// https://stackoverflow.com/questions/4363197/getting-the-last-modified-date-of-a-file-in-java
+	    	 DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss"); 				// https://stackoverflow.com/questions/4363197/getting-the-last-modified-date-of-a-file-in-java
 	    	   
 	    	 if (fileODirectori.isDirectory()) {
 	    		  
