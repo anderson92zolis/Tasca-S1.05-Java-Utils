@@ -1,16 +1,25 @@
-Es un directorio (D):  n1exercici1 Ultima modificacion: 30/01/2023 - 01:39:20
-	Es un fichero (F):  llistiAlfabeticamentContingut.java Ultima modificacion: 30/01/2023 - 05:22:11
-Es un directorio (D):  n1exercici2 Ultima modificacion: 30/01/2023 - 06:32:37
-	Es un fichero (F):  App.class Ultima modificacion: 30/01/2023 - 06:32:37
-	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 07:07:16
-Es un directorio (D):  n1exercici3 Ultima modificacion: 30/01/2023 - 07:52:46
-	Es un fichero (F):  App.class Ultima modificacion: 30/01/2023 - 07:52:46
-	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 07:51:33
-	Es un fichero (F):  directorios_subdirectoriosOrdenados.txt Ultima modificacion: 30/01/2023 - 07:53:19
-Es un directorio (D):  n1exercici4 Ultima modificacion: 30/01/2023 - 01:32:06
-	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 01:32:06
-	Es un fichero (F):  contengutDirAL.java Ultima modificacion: 30/01/2023 - 01:32:06
-Es un directorio (D):  n1exercici5 Ultima modificacion: 30/01/2023 - 01:46:25
-	Es un fichero (F):  Main.java Ultima modificacion: 30/01/2023 - 01:46:43
-	Es un fichero (F):  Ordinador.java Ultima modificacion: 30/01/2023 - 01:46:40
-	Es un fichero (F):  prueba.txt Ultima modificacion: 30/01/2023 - 01:32:06
+Es un directorio (D):  n1exercici1 Ultima modificacion: 31/01/2023 - 12:04:34
+	Es un fichero (F):  App.java Ultima modificacion: 31/01/2023 - 12:14:36
+	Es un fichero (F):  LListeAlfDirectory.class Ultima modificacion: 31/01/2023 - 10:51:52
+	Es un fichero (F):  LListeAlfDirectory.java Ultima modificacion: 31/01/2023 - 10:45:59
+Es un directorio (D):  n1exercici2 Ultima modificacion: 31/01/2023 - 12:04:40
+	Es un fichero (F):  App.java Ultima modificacion: 31/01/2023 - 11:48:52
+	Es un fichero (F):  LlisteAlfDirectoryRecursiv.java Ultima modificacion: 31/01/2023 - 11:42:37
+Es un directorio (D):  n1exercici3 Ultima modificacion: 31/01/2023 - 12:26:29
+	Es un fichero (F):  App.java Ultima modificacion: 31/01/2023 - 12:25:01
+	Es un fichero (F):  directorios_subdirectoriosOrdenados.txt Ultima modificacion: 31/01/2023 - 12:27:22
+	Es un fichero (F):  GuardaEnTxt.java Ultima modificacion: 31/01/2023 - 12:21:11
+Es un directorio (D):  n1exercici3 Ultima modificacion: 31/01/2023 - 12:26:29
+	Es un fichero (F):  App.class Ultima modificacion: 31/01/2023 - 12:26:29
+	Es un fichero (F):  GuardaEnTxt.class Ultima modificacion: 31/01/2023 - 12:26:29
+Es un directorio (D):  n1exercici4 Ultima modificacion: 30/01/2023 - 20:59:55
+	Es un fichero (F):  App.class Ultima modificacion: 30/01/2023 - 20:59:55
+	Es un fichero (F):  App.java Ultima modificacion: 30/01/2023 - 20:57:12
+	Es un fichero (F):  filename.txt Ultima modificacion: 30/01/2023 - 13:32:06
+Es un directorio (D):  n1exercici5 Ultima modificacion: 30/01/2023 - 13:46:25
+	Es un fichero (F):  Main.java Ultima modificacion: 30/01/2023 - 21:23:24
+	Es un fichero (F):  Ordinador.java Ultima modificacion: 30/01/2023 - 13:46:40
+Es un directorio (D):  n2exercici1 Ultima modificacion: 31/01/2023 - 09:42:30
+	Es un fichero (F):  App.java Ultima modificacion: 31/01/2023 - 10:24:16
+	Es un fichero (F):  configuracion.properties.txt Ultima modificacion: 31/01/2023 - 10:21:16
+	Es un fichero (F):  nomFicherResult.txt Ultima modificacion: 31/01/2023 - 10:24:18
