@@ -79,8 +79,9 @@ Ejutamos el programa:
 
 resultado que contiene el file.txt: 
 
-	Volvoo BMW Ford Mazda Ibiza
-	Nextline
+	Volvo BMW
+	Ford
+	Mazda
 
 _______________________________________________________________________________________________
 - N1E5: Exercici 5

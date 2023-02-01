@@ -7,23 +7,20 @@ import java.util.Scanner;
 
 public class LlegirFitxerTXT {
 	
-	public static void importOrdenaArrayList(String fileLocation) throws IOException{	
+	public static void importOrdenaArrayList(File fileLocation) throws IOException{	
 		
-		//File myObjFile = null;
-		//Scanner myReader = null;
+		Scanner myReader = null;
 	
 		try {
-			File myObjFile = new File(fileLocation);
-			Scanner myReader = new Scanner(myObjFile);
-	      while (myReader.hasNextLine()) {
-	    	System.out.println(myReader.nextLine());
-	      }		      
-	      
-	    } catch (FileNotFoundException e) {
-	      System.out.println("An error occurred.");
-	      e.printStackTrace();
-	    } finally { 
-	    	myReader.close();
+			myReader = new Scanner(fileLocation);
+			while (myReader.hasNextLine()) {
+				System.out.println(myReader.nextLine());
+			}		      
+	    	} catch (FileNotFoundException e) {
+	    		System.out.println("An error occurred.");
+	    		e.printStackTrace();
+	    	} finally { 
+	    		myReader.close();       // important to know .close()
 	    	}
 	}
 

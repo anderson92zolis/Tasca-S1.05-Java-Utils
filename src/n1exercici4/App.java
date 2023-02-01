@@ -1,5 +1,6 @@
 package n1exercici4;
 
+import java.io.File;
 import java.io.IOException;
 
 public class App {
@@ -11,15 +12,21 @@ public class App {
 	 */
 		
 	//filename.txt ->Si no especifica el path del directorio java tomará como referencia el path del directorio donde está trabajando(se puede poner el fichero.txt). 
-	
+		
+		File file;
+		String route;
 	
 		if (args.length==1) {
 			try {
-				LlegirFitxerTXT.importOrdenaArrayList(args[0]);
+				route = args[0];
+				file= new File(route);
+				LlegirFitxerTXT.importOrdenaArrayList(file);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+					// TODO Auto-generated catch block
+					System.out.println("file doesn't exist! ");
+					e.printStackTrace();
+				} 
+			
 		}else {
 			System.out.println("Check if the specified path is correct, spaces aren't allow! ");
 			}		
