@@ -9,10 +9,9 @@ import java.util.Arrays;
 
 public class GuardaEnTxt {
 
-	public static void guardaEnFicheTxt(String fileLocation, String nametxtToWritE) {
+	public static void guardaEnFicheTxt(File fileLocation, String nametxtToWritE) {
 			
 			try {
-				
 				PrintStream myConsole = System.out;
 	            PrintStream fileOut = new PrintStream(nametxtToWritE); // name of a file where we are going to write
 	            System.setOut(fileOut);
@@ -22,10 +21,9 @@ public class GuardaEnTxt {
 				};
 			}
 
-	public static void importOrdenaArrayList(String fileLocation) {
+	public static void importOrdenaArrayList(File fileLocation) {
 		
-	    File creationFile = new File(fileLocation);
-	    File[] nombresArchivos = creationFile.listFiles(); // create a File type Array 
+	    File[] nombresArchivos = fileLocation.listFiles(); // create a File type Array 
 	    Arrays.sort(nombresArchivos);
 	     
 	    for (int i=0;  i <nombresArchivos.length;i++) {
@@ -37,7 +35,7 @@ public class GuardaEnTxt {
 	   	 if (fileODirectori.isDirectory()) {
 	   		  
 	   		  System.out.println("Es un directorio (D):  " + fileODirectori.getName() +" Ultima modificacion: " +dateFormat.format(fileODirectori.lastModified()));
-	   		  importOrdenaArrayList(fileODirectori.getAbsolutePath()); // recursividad 
+	   		  importOrdenaArrayList(fileODirectori); // recursividad 
 	   	  } else {
 	   		  System.out.println("\t"+"Es un fichero (F):  "+ fileODirectori.getName()+ " Ultima modificacion: "+ dateFormat.format(fileODirectori.lastModified()));;
 	   		  }

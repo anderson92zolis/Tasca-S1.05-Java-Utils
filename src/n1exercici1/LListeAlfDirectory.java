@@ -6,11 +6,11 @@ import java.util.Arrays;
 public class LListeAlfDirectory {
 	
 	
-	public static void ordenaDirectorio(String fileLocation) {
+	public static void ordenaDirectorio(File fileLocation) {
 		  
 	     try {
-	      File creationFile = new File(fileLocation);
-	      String[] nombresArchivos = creationFile.list(); // transformamos toda la Array a tipo String
+	    	 
+	      String[] nombresArchivos = fileLocation.list(); // transformamos toda la Array a tipo String
 	      Arrays.sort(nombresArchivos); //ordenamos
 	      
 	      for(String ordenAlfa:nombresArchivos) {

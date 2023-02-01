@@ -1,5 +1,7 @@
 package n1exercici2;
 
+import java.io.File;
+
 public class App {
 	/*
     * Exercici2
@@ -13,9 +15,14 @@ public class App {
 		
 		// args act like an array of string
 		
+		File file;
+		String route;
+		
 		if (args.length==1) {
+			route = args[0];
+			file = new File(route);
 			
-			LlisteAlfDirectoryRecursiv.ordenaDirectorioRecursiv(args[0]);
+			LlisteAlfDirectoryRecursiv.ordenaDirectorioRecursiv(file);
 			
 		}else {
 			System.out.println("Check if the specified path is correct, spaces aren't allow! ");

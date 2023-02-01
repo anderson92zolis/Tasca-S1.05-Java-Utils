@@ -8,8 +8,6 @@ import java.util.Properties;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.OutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class App {
@@ -32,9 +30,9 @@ public class App {
 			Properties propiedades= new Properties();
 			propiedades.load(new FileInputStream(new File(pathConfigPropertxt)));
 		
-			/*System.out.println("Directori a llegir: "+ propiedades.getProperty("Directori"));
+			System.out.println("Directori a llegir: "+ propiedades.getProperty("Directori"));
 		    System.out.println("Directori del fichet txt: " +propiedades.getProperty("DirectoriFicher"));
-		    System.out.println("Nom del ficher txt: "+propiedades.getProperty("NomFicher"));*/
+		    System.out.println("Nom del ficher txt: "+propiedades.getProperty("NomFicher"));
 		    
 			String directori= propiedades.getProperty("Directori");
 			String directoriFicher= propiedades.getProperty("DirectoriFicher");

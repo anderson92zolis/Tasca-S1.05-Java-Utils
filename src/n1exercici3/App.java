@@ -1,5 +1,6 @@
 package n1exercici3;
 
+import java.io.File;
 
 public class App {
 
@@ -10,9 +11,14 @@ public class App {
 	    * guarda el resultat en un fitxer TXT. 
 	    */
 		
-		if (args.length==1) {			// Path where is the txt
+		File file;
+		String route;
+		
+		if (args.length==1) {
+			route = args[0];
+			file = new File(route);					// Path where is the txt.towrite
 			String nametxtToWrite= "C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\src\\n1exercici3\\directorios_subdirectoriosOrdenados.txt";
-			GuardaEnTxt.guardaEnFicheTxt(args[0],nametxtToWrite);
+			GuardaEnTxt.guardaEnFicheTxt(file,nametxtToWrite);
 		}else {
 			System.out.println("Check if the specified path is correct, spaces aren't allow! ");
 			}	

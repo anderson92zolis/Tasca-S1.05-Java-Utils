@@ -1,5 +1,7 @@
 package n1exercici4;
 
+import java.io.IOException;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -12,11 +14,16 @@ public class App {
 	
 	
 		if (args.length==1) {
-		LlegirFitxerTXT.importOrdenaArrayList(args[0]);
-	}else {
-		System.out.println("Check if the specified path is correct, spaces aren't allow! ");
-		}		
+			try {
+				LlegirFitxerTXT.importOrdenaArrayList(args[0]);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}else {
+			System.out.println("Check if the specified path is correct, spaces aren't allow! ");
+			}		
 	}
-	
+		
 
 }	

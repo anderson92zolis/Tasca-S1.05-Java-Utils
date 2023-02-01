@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 
 public class Main {
 
-	public static void main(String[] args) throws ClassNotFoundException { // lanzar throws ClassNotFoundException para la lectura del ficheros
+	public static void main(String[] args)  { // lanzar throws ClassNotFoundException para la lectura del ficheros
 	 
 	/* - Exercici 5
 	 * Ara el programa ha de serialitzar un Objecte Java a un fitxer .ser i després l’ha de desserialitzar.
@@ -41,6 +41,9 @@ public class Main {
 	
 		catch(IOException e) {
 		  e.getMessage();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}	
 	}
 

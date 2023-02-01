@@ -7,11 +7,12 @@ import java.util.Arrays;
 
 public class LlisteAlfDirectoryRecursiv {
 
-	public static void ordenaDirectorioRecursiv(String fileLocation) {
+	public static void ordenaDirectorioRecursiv(File fileLocation) {
 		
-	     File creationFile = new File(fileLocation);
-	      File[] nombresArchivos = creationFile.listFiles(); // transformamos a Array de tipo File
-	      Arrays.sort(nombresArchivos);
+	     
+		
+	     File[] nombresArchivos = fileLocation.listFiles(); // transformamos a Array de tipo File
+	     Arrays.sort(nombresArchivos);
 	      
 	      for (int i=0;  i <nombresArchivos.length;i++) {
 	
@@ -19,12 +20,11 @@ public class LlisteAlfDirectoryRecursiv {
 	    	  
 	    	  DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy - HH:mm:ss"); 				// https://stackoverflow.com/questions/4363197/getting-the-last-modified-date-of-a-file-in-java
 	    	  
-	    	  //Date lastModificacion= new Date(fileODirectori.lastModified());
 	    	  
 	    	  if (fileODirectori.isDirectory()) {
 	    		  
 	    		  System.out.println("Es un directorio (D):  " + fileODirectori.getName() +" Ultima modificacion: " +dateFormat.format(fileODirectori.lastModified()));
-	    		  ordenaDirectorioRecursiv(fileODirectori.getAbsolutePath()); // recursividad
+	    		  ordenaDirectorioRecursiv(fileODirectori); // recursividad
 	    		 
 	    	  }
 	    	 
