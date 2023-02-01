@@ -24,13 +24,13 @@ public class Main {
 	
 	try {
 		//salida
-		ObjectOutputStream escribiendo_Fichero= new ObjectOutputStream(new FileOutputStream("C:\\Users\\azoli\\eclipse-workspace\\ordenador.ser"));
+		ObjectOutputStream escribiendo_Fichero= new ObjectOutputStream(new FileOutputStream("C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\src\\n1exercici5\\ordenador.ser"));
 		escribiendo_Fichero.writeObject(listaOrdenadores); 		
 		escribiendo_Fichero.close();
 		  
 		//entrada
 		
-		ObjectInputStream recuperando_Fichero= new ObjectInputStream(new FileInputStream("C:\\Users\\azoli\\eclipse-workspace\\ordenador.ser"));
+		ObjectInputStream recuperando_Fichero= new ObjectInputStream(new FileInputStream("C:\\Users\\azoli\\eclipse-workspace\\Tasca-S1.05-Java-Utils\\src\\n1exercici5\\ordenador.ser"));
 		Ordinador[] ordenadoresRecuperadosEnArray = (Ordinador[]) recuperando_Fichero.readObject();
 		recuperando_Fichero.close();
 		
@@ -41,9 +41,9 @@ public class Main {
 	
 		catch(IOException e) {
 		  e.getMessage();
-		} catch (ClassNotFoundException e) {
+		} catch (ClassNotFoundException ex) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			ex.printStackTrace();
 		}	
 	}
 

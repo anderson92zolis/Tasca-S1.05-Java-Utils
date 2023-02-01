@@ -34,21 +34,20 @@ public class App {
 		    System.out.println("Directori del fichet txt: " +propiedades.getProperty("DirectoriFicher"));
 		    System.out.println("Nom del ficher txt: "+propiedades.getProperty("NomFicher"));
 		    
-			String directori= propiedades.getProperty("Directori");
+			File fileLocation= new File(propiedades.getProperty("Directori"));
 			String directoriFicher= propiedades.getProperty("DirectoriFicher");
 			String nomFicher= propiedades.getProperty("NomFicher");
 			
-			guardaEnFicheTxt(directori,directoriFicher,nomFicher);
+			guardaEnFicheTxt(fileLocation,directoriFicher,nomFicher);
 		
 			}catch (FileNotFoundException e) {
-			      // TODO Auto-generated catch block
 			      e.printStackTrace();
-			}catch (IOException e) {
-				System.out.println("VA PASSAR UN ERROR ->"+e.getMessage());
+			}catch (IOException ex) {
+				System.out.println("one error ocurred! ->"+ex.getMessage());
 			}
 	}
 	
-	public static void guardaEnFicheTxt(String fileLocation, String directoriFicher, String nomFicher) {
+	public static void guardaEnFicheTxt(File fileLocation, String directoriFicher, String nomFicher) {
 		
 		try {
 			File fileODirectori= new File(new File(directoriFicher),nomFicher); //create the File object with the directory and name of ficher 
@@ -61,10 +60,10 @@ public class App {
 			}
 		}
 	
-	public static void importOrdenaArrayList(String fileLocation) {
+	public static void importOrdenaArrayList(File fileLocation) {
 		
-	     File creationFile = new File(fileLocation);
-	     File[] nombresArchivos = creationFile.listFiles(); // create a File type Array 
+	     
+	     File[] nombresArchivos = fileLocation.listFiles(); // create a File type Array 
 	     Arrays.sort(nombresArchivos);
 	      
 	     for (int i=0;  i <nombresArchivos.length;i++) {
@@ -76,7 +75,7 @@ public class App {
 	    	 if (fileODirectori.isDirectory()) {
 	    		  
 	    		  System.out.println("Es un directorio (D):  " + fileODirectori.getName() +" Ultima modificacion: " +dateFormat.format(fileODirectori.lastModified()));
-	    		  importOrdenaArrayList(fileODirectori.getAbsolutePath()); // recursividad 
+	    		  importOrdenaArrayList(fileODirectori); // recursividad 
 	    	  } else {
 	    		  System.out.println("\t"+"Es un fichero (F):  "+ fileODirectori.getName()+ " Ultima modificacion: "+ dateFormat.format(fileODirectori.lastModified()));;
 	    		  }
