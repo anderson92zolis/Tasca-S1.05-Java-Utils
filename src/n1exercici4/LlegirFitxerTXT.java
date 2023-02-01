@@ -8,6 +8,7 @@ public class LlegirFitxerTXT {
 	
 	public static void importOrdenaArrayList(String fileLocation){	
 		
+		
 		try {
 	      File myObjFile = new File(fileLocation);
 	      Scanner myReader = new Scanner(myObjFile);

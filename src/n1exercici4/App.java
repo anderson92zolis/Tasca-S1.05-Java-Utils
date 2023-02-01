@@ -10,7 +10,8 @@ public class App {
 		
 	//filename.txt ->Si no especifica el path del directorio java tomará como referencia el path del directorio donde está trabajando(se puede poner el fichero.txt). 
 	
-	if (args.length==1) {
+	
+		if (args.length==1) {
 		LlegirFitxerTXT.importOrdenaArrayList(args[0]);
 	}else {
 		System.out.println("Check if the specified path is correct, spaces aren't allow! ");
